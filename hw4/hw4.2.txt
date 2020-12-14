@@ -1,0 +1,27 @@
+#include<stdio.h> 
+ int main()
+{
+    int a,b,k,i;
+    int R[30];
+        printf("请输入一个十进制数:  ");
+        scanf("%d",&a);
+        printf("转换成八进制数是：%o\n",a) ;
+        printf("转换成十六进制数是：%x\n",a) ; 
+        k=0;
+        while(a!=0)
+        {
+            b=a/2;
+            k++;
+            R[k]=a-b*2;
+            a=a/2;
+        };
+        printf("转换成二进制数是:  ");
+        for (i=k; i>=1; i--)
+        {
+            printf("%d",R[i]);
+        }
+        printf("\n\n");
+        
+    
+    return 0;
+}

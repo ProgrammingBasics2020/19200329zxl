@@ -5,7 +5,7 @@ int is_prime(int n)
  {if(n%i==0)
   a++;
  }
- if(a=0)
+ if(a==0)
  {return 0;}
  else
  {return -1;}
@@ -14,8 +14,8 @@ int main()
 {for(int k=541;k<7789;k++)
  {int t;
   t=is_prime(int n);
-  if(t=0)
-  {printf("%d",k);}
+  if(t==0)
+  {printf("%d ",k);}
   else
   continue;}
   return 0;}

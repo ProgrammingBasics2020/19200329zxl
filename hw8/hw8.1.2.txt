@@ -1,0 +1,22 @@
+#include<stdio.h>
+int GCD_iterative(int m, int n)
+{int k;
+ if(m>=n)
+ {k=m%n; 
+  m=m/n;}
+  else if(m<n)
+ {k=n%m;
+  n=n/m;}
+ while(k!=0)
+ GCD_iterative(m,n);
+ if(m>=n)
+ return m;
+ else
+ return n; 
+}
+int main()
+{int m,n;
+ scanf("%d %d",&m,&n);
+ printf("%d",GCD_iterative(m,n));
+ return 0;
+}

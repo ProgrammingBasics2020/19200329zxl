@@ -1,0 +1,16 @@
+#include<stdio.h>
+int fac_bit_count(int n)
+{  int i,sum=1;
+ for(i=1;i<=n;i++)    
+  sum*=i;    
+ 
+ return sum;}
+ int main()
+ {int n,s,k=0;
+  scanf("%d",n);
+  printf("%d",fac_bit_count(n));
+  while(s>0)
+ {k++;
+   s=s/10;}
+  printf("%d",s);
+  return 0;}

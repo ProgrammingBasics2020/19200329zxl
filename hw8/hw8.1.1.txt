@@ -1,0 +1,29 @@
+#include<stdio.h>
+int GCD_recursive(int m, int n)
+{  int k=1;
+  while(k!=0)
+ {if(m>=n)
+  { k=m%n;
+  if(k!=0) 
+   m=k;
+  else
+   break;} 
+  else
+  { k=n%m;
+   if(k!=0)    
+    n=k;
+   else
+    break;}}
+  if(m>=n)
+  return n;
+  else
+  return m;
+  
+}
+int main()
+{int m,n;
+ scanf("%d %d",&m,&n); 
+  printf("%d",GCD_recursive( m,  n));
+  return 0;}
+
+  

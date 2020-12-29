@@ -1,0 +1,23 @@
+#include<stdio.h>
+int is_prime(int n)
+{int a=0;
+ for(int i=2;i<n;i++)
+ {if(n%i==0)
+  a++;
+ }
+ if(a=0)
+ {return 0;}
+ else
+ {return -1;}
+}
+int main()
+{for(int k=541;k<7789;k++)
+ {int t;
+  t=is_prime(int n);
+  if(t=0)
+  {printf("%d",k);}
+  else
+  continue;}
+  return 0;}
+  
+  
